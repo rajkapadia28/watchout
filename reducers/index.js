@@ -13,4 +13,4 @@ const auth = (state = {}, action) => {
 	}
 }
 
-export default combineReducers({});
+export default combineReducers({auth});
