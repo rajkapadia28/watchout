@@ -11,7 +11,7 @@ export const Login = () => async dispatch => {
 	}
 } 
 
-async signInWithGoogleAsync = async dispatch => {
+const signInWithGoogleAsync = async dispatch => {
   try {
     const result = await Expo.Google.logInAsync({
       androidClientId: '89982648137-c2rljcnqddb0jtpk9pif9gl67dmamvc6.apps.googleusercontent.com',

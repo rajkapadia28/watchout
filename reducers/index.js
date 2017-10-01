@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
 
-import {} from '../actions/types';
+import { LOGIN_SUCCESS, LOGIN_FAIL } from '../actions/types';
 
 const auth = (state = {}, action) => {
-	switch (action,type) {
+	switch (action.type) {
 		case LOGIN_SUCCESS:
 			return { token: action.payload };
 		case LOGIN_FAIL:

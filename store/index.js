@@ -3,15 +3,17 @@ import thunk from 'redux-thunk';
 import { persistStore, autoRehydrate } from 'redux-persist';
 import { SecureStore } from 'expo';
 
+import reducers from '../reducers';
+
 const store = createStore(
   reducers,
   {},
   compose(
     applyMiddleware(thunk),
-    autoRehydrate()
+    //autoRehydrate()
   )
 );
 
-persistStore(store, { storage: SecureStore });
+//persistStore(store, { storage: SecureStore });
 
 export default store;
