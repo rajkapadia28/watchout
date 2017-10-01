@@ -9,9 +9,9 @@ import CameraUnit from './components/CameraUnit';
 import store from './store';
 
 const MainNavigator =  StackNavigator({
+    camera: { screen: CameraUnit },
     login: { screen: LoginScreen },
-    camera: { screen: CameraUnit }
-});
+}, {headerMode: 'none'});
 
 export default class App extends React.Component {
     render() {
